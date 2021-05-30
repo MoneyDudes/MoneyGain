@@ -2,66 +2,96 @@
 <html lang="en">
   <html>
     <head>
-      <title>Sign Up</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta charset="utf-8" />
-      <link rel="stylesheet" type="text/css" href="signup_style.css" />
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
-      <link
-        href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600"
-        rel="stylesheet"
-        type="text/css"
-      />
-      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    </head>
-
-    <body class="body">
-
-
-      <div class="login-page">
-        <div class="form">
-          <form>
-            <lottie-player
-              src="https://assets4.lottiefiles.com/datafiles/XRVoUu3IX4sGWtiC3MPpFnJvZNq7lVWDCa8LSqgS/profile.json"
-              background="transparent"
-              speed="1"
-              style="justify-content: center"
-              loop
-              autoplay
-            ></lottie-player>
-            <input type="text" placeholder="full name" />
-            <input type="text" placeholder="email address" />
-            <input type="text" placeholder="pick a username" />
-            <input type="password" id="password" placeholder="set a password" />
-            <i class="fas fa-eye" onclick="show()"></i>
-            <br>
-            <br>
-          </form>
-
-          <form class="login-form">
-            <button type="button" onclick="window.location.href='login.html'">
-              SIGN UP
-            </button>
-          </form>
-        </div>
-      </div>
-    </body>
-    <script>
-      function show() {
-        var password = document.getElementById("password");
-        var icon = document.querySelector(".fas");
-
-        // ========== Checking type of password ===========
-        if (password.type === "password") {
-          password.type = "text";
-        } else {
-          password.type = "password";
+      <title>Registration</title>
+      <style type="text/css">
+      *{
+        margin: 0;
+        padding: 0;
         }
-      }
-    </script>
+
+        body{
+          background-image: url(https://wallpaperaccess.com/full/887056.jpg);
+          background-position: center;
+          background-size: cover;
+          font-family: sans-serif;
+          margin-top: 40px;
+        }
+        .regform{
+          width: 800px;
+          background-color: rgb(0,0,0,6);
+          margin:auto;
+          color: #FFFFFF;
+          padding:10px 0px 10px 0px;
+          text-align:center;
+          border-radius:15px 15px 0px 0px;
+
+
+        }
+
+        main{
+          background-color: rgb(0,0,0,60.5);
+          width: 800px;
+          margin: auto;
+          
+        }
+
+      </style>
+
+<div class="regform"><h1>Registration form</h1></div>
+<div class="main">
+<form>
+<div id="name">
+<h2 class="name">Name</h2>
+<input class="firstname" type="rext" name="first_name"><br>
+<label class="firstlabel">first name</label>
+<input class="lastname" type="text" name="last_name">
+<label class="lastlabel">last name</label>
+</div>
+
+<h2 class="name"> Company</h2>
+<input class="company" type="text" name="company">
+
+<h2 class="name">email</h2>
+<input class="email" type="text" name="email">
+
+<h2 class="name">Phone</h2>
+<input class="code" type="text" name="area_code">
+<label class="area-code">Area Code</label>
+<input class="number" type="text" name="phone">
+<label class="phone-number">Phone Number</label>
+
+<h2 class="name">Subject</h2>
+<select class="option" name="subject">
+  <option disabled="disabled" selected="selected">--Chose Option</option>
+  <option>Subject 1</option>
+  <option>Subject 2</option>
+  <option>Subject 3</option>
+  <option>Subject 4</option>
+
+</select>
+
+
+
+<h2 id="student">Are you a beginner ?</h2>
+
+<label class="radio">
+  <input class="radio-one" type="radio" checked="checked" name="">
+  <span class="checkmark"></span>
+  Yes
+</label>
+<label class="radio">
+  <input class="radio-one" type="radio" checked="checked" name="">
+  <span class="checkmark"></span>
+  No
+</label>
+
+<button type="submit">Register</button>
+
+
+</form>
+</div>
+
+
+
   </html>
 </html>
