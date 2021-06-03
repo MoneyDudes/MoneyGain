@@ -1,1 +1,1 @@
-# This is a website for fun.
+# This is a website for fun
